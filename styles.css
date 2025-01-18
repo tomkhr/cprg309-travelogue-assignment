@@ -21,31 +21,33 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: #fff;
 }
 
 h2 {
     color: #f07167;
-    font-weight: 400;
-    font-size: 1.3rem;
-}
-
-h3 {
     font-size: 2.5rem;
 }
 
-h4 {
-    font-size: 1.5rem;
+h3 {
+    font-size: 2rem;
     color: #002f68;
 }
 
 header {
     background-color: #002f68;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.assignmentDetails {
+    color: #f07167;
 }
 
 footer {
@@ -66,39 +68,28 @@ nav {
     justify-content: right;
 }
 
+a {
+    text-decoration: none;
+    color: #002f68;
+    font-weight: 500;
+}
+
 #navLink {
     color: #f5f2e8;
-    text-decoration: none;
-    font-weight: 700;
     margin: .3rem;
-    padding: 1rem;
+    padding: .7rem 1.5rem;
     background-color: #002f68;
-    border: 3px solid #f07167;
+    border: 2px solid #f5f2e8;
     border-radius: .5rem;
 }
 
 #navLink:hover {
     background-color: #f07167;
-}
-
-main {
-
-}
-
-#welcome {
-    background-color: white;
-    min-height: 90vh;
-    margin: 4rem auto;
-    margin-top: -1rem;
-    display: flex;
-    justify-content: center;    align-items: left;
-    flex-direction: column;
-    gap: 3rem;
+    border-color: #f07167;
 }
 
 section {
-    min-height: 90vh;
-    margin: 5rem auto;
+    padding: 4rem 1rem;
     display: flex;
     justify-content: center;    
     align-items: left;
@@ -106,11 +97,8 @@ section {
     gap: 3rem;
 }
 
-.dividerBar {
-    height: 2px;
-    width: 100%;
-    max-width: 400px;
-    background-color: #002f68;
+#villefranche {
+    background-color: #fff;
 }
 
 img {
@@ -139,6 +127,99 @@ figcaption {
 }
 
 p {
-    padding: 1rem;
     max-width: 100ch;
+}
+
+#extLinkCard {
+    padding: 2rem;
+    border: 2px solid #002f68;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+#extLinkCard:hover {
+    background-color: #f0716730;
+}
+
+#extLinkCard img {
+    max-width: 30px;
+}
+
+span {
+    width: 100%;
+}
+
+#extLinksArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    max-width: 80ch;
+}
+
+
+@media screen and (max-width:768px) {
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .titleDiv {
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #navLink {
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    #extLinksArea {
+        display: flex;
+flex-direction: column;
+}
+
+#extLinkCard {
+    padding: 1.5rem 1rem;
+}
+
+}
+
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #navLink {
+        text-align: center;
+        padding: .8rem;
+    }
+
+    #extLinkCard {
+        padding: 1rem;
+    }
 }
