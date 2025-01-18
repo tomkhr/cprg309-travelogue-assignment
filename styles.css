@@ -224,7 +224,7 @@ flex-direction: column;
     }
 
     header {
-        gap: .5rem
+        position: static;
     }
 
     nav {
