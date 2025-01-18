@@ -67,7 +67,7 @@ nav {
 }
 
 #navLink {
-    color: #fdfcdc;
+    color: #f5f2e8;
     text-decoration: none;
     font-weight: 700;
     margin: .3rem;
@@ -116,6 +116,26 @@ section {
 img {
     max-width: 100%;
     height: auto;
+}
+
+figcaption {
+    margin-top: -40px;
+}
+
+.sliderButton {
+    background-color: #f07167;
+    border: none;
+    padding: .7rem;
+    max-width: 45px;
+}
+
+.sliderButton:hover {
+    background-color: #002f68;
+    cursor: pointer;
+}
+
+.sliderButton:active {
+    background-color: #785068;
 }
 
 p {
