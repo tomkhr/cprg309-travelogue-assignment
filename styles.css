@@ -173,7 +173,8 @@ span {
 
     header {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
+        padding: .8rem;
     }
 
     .titleDiv {
@@ -208,6 +209,14 @@ flex-direction: column;
     
     h2 {
         font-size: 1.75rem;
+    }
+
+    .assignmentDetails {
+        font-size: .8rem;
+    }
+
+    header {
+        gap: .5rem
     }
 
     nav {
