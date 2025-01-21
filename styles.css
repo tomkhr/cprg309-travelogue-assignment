@@ -250,6 +250,10 @@ footer a {
         padding-top: 15vh;
     }
 
+    #firstArticleH2 {
+        margin-top: initial;
+    }
+
     .titleDiv {
         text-align: center;
     }
@@ -316,10 +320,6 @@ footer a {
 
     header {
         position: static;
-    }
-
-    main {
-        padding-top: 0vh;
     }
 
     nav {
