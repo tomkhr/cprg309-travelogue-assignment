@@ -13,6 +13,7 @@ html {
 body {
     font-family: "Roboto Mono", 'Courier New', Courier, monospace;
     background-color: #f5f2e8;
+    color: #002f68;
 }
 
 h1, h2, h3, h4 {
@@ -44,10 +45,53 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .assignmentDetails {
     color: #f07167;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 40%;
+    background-color: #fff;
+    margin: 0;
+    padding: 2rem;
+    box-shadow: 5px 0px 10px #002f6810;
+    z-index: 1;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+}
+
+#stickyaside {
+    position: sticky;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #authorFigure {
+
+} */
+
+.authorImg {
+    max-width: 100%;
+    height: auto;
+    min-width: 180px;
+    }
+
+#introTextContent {
+    margin: 0rem;
+}
+
+section {
+    width: 100%;
 }
 
 footer {
@@ -88,8 +132,8 @@ a {
     border-color: #f07167;
 }
 
-section {
-    padding: 4rem 1rem;
+article {
+    padding: 5rem 2rem;
     display: flex;
     justify-content: center;    
     align-items: left;
@@ -97,8 +141,13 @@ section {
     gap: 3rem;
 }
 
+#firstArticleH2 {
+    margin-top: 12vh;
+}
+
 #villefranche {
     background-color: #fff;
+    box-shadow: 5px 0px 10px #002f6810;
 }
 
 img {
@@ -110,19 +159,24 @@ figcaption {
     margin-top: -40px;
 }
 
-.sliderButton {
+#authorName {
+    font-weight: 900;
+}
+
+Button {
     background-color: #f07167;
+    color: #fff;
     border: none;
     padding: .7rem;
     max-width: 45px;
 }
 
-.sliderButton:hover {
+Button:hover {
     background-color: #002f68;
     cursor: pointer;
 }
 
-.sliderButton:active {
+Button:active {
     background-color: #785068;
 }
 
@@ -160,6 +214,16 @@ span {
     max-width: 80ch;
 }
 
+footer {
+    color: #fff;
+    font-size: .7rem;
+}
+
+footer a {
+    color: #f07167;
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width:768px) {
 
@@ -181,12 +245,38 @@ span {
         padding: .8rem;
     }
 
+    main {
+        flex-direction: column;
+        padding-top: 15vh;
+    }
+
     .titleDiv {
         text-align: center;
     }
 
     nav {
         justify-content: center;
+    }
+
+    aside {
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    article h2 {
+        margin-top: initial;
+    }
+
+    #authorFigure {
+        margin: auto 2rem auto auto;
+    }
+
+    #stickyaside {
+        position: initial;
+        top: initial;
+        flex-direction: row;
     }
 
     #navLink {
@@ -196,7 +286,8 @@ span {
 
     #extLinksArea {
         display: flex;
-flex-direction: column;
+        flex-direction: column;
+        justify-items: center;
 }
 
 #extLinkCard {
@@ -227,6 +318,10 @@ flex-direction: column;
         position: static;
     }
 
+    main {
+        padding-top: 0vh;
+    }
+
     nav {
         flex-direction: column;
     }
@@ -239,4 +334,16 @@ flex-direction: column;
     #extLinkCard {
         padding: 1rem;
     }
+
+    #stickyaside {
+        flex-direction: column;
+    }
+
+    .authorImg {
+        min-width: initial;
+        }
+
+        #authorFigure {
+            margin: initial;
+        }
 }
